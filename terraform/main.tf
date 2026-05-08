@@ -12,5 +12,5 @@ resource "random_string" "suffix" {
 }
 
 locals {
-  cluster_name = "${var.clustername}-${random_string.suffix.result}"
+  cluster_name = "${var.clusterName}-${random_string.suffix.result}"
 }
