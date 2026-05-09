@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - stage
+      - main
     paths:
       - terraform/**
   pull_request:
@@ -28,7 +29,6 @@ jobs:
       run:
         shell: bash
         working-directory: ./terraform
-
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
